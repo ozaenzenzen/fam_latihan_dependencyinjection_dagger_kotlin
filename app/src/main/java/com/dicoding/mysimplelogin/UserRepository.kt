@@ -4,7 +4,7 @@ import android.util.Log
 import javax.inject.Inject
 import javax.inject.Singleton
 
-// @Singleton
+@Singleton
 class UserRepository @Inject constructor(private val sesi: SessionManager) {
     fun loginUser(username: String) {
         sesi.createLoginSession()
